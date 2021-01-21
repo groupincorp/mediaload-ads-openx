@@ -1,3 +1,8 @@
+<?php 
+    $startDate = isset($_GET['period_start']) ? date("Y-m-d", strtotime(str_replace("+", "-", $_GET['period_start']))) : date("Y-m-d");
+    $endDate = isset($_GET['period_end']) ? date("Y-m-d", strtotime(str_replace("+", "-", $_GET['period_end']))) : date("Y-m-d");
+?>
+
 <div>
 	<table width='100%' border='0' cellspacing='0' cellpadding='0'>
 	<tr>
@@ -20,8 +25,8 @@
     			<a href="<?php echo htmlspecialchars($t->pageURI);?>plugin=advertiser:statshistory" accesskey="e">
                     <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?>
                 </a>
-
-                <a target="_blank" href="http://ads-report.ml.groupincorp.com/campaign/<?php echo($_GET['campaignid']); ?>">Report Dashboard</a>
+                |
+                <a target="_blank" href="http://ads-report.ml.groupincorp.com/campaign/<?php echo($_GET['campaignid']); ?>?start=<?php echo $startDate; ?>&end=<?php echo $endDate; ?>">Report Dashboard</a>
     		</td>
     		<td width="90%">&nbsp;</td>
     	<?php } else {?>
