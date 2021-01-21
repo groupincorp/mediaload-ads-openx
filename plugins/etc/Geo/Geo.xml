@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href=""?>
+
+<plugin>
+    <name>Geo</name>
+    <displayName>Geotargeting Delivery Rules Plugin</displayName>
+    <creationDate>2019-11-11</creationDate>
+    <author>Revive Adserver</author>
+    <authorEmail>revive@revive-adserver.com</authorEmail>
+    <authorUrl>http://www.revive-adserver.com</authorUrl>
+    <license>LICENSE.txt</license>
+    <description>Plugin that provides the ability to target delivery of ads by geographic location.</description>
+    <version>5.0.3</version>
+    <oxversion>5.0.0-dev</oxversion>
+    <extends>deliveryLimitations</extends>
+
+    <install>
+        <files>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">City.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">City.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">City.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">ConnectionType.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">ConnectionType.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">ConnectionType.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Continent.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Continent.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Continent.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Country.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Country.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Country.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Latlong.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Latlong.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Organisation.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Organisation.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Postalcode.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Postalcode.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision1.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision1.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision1.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision2.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision2.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">Subdivision2.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">UsMetro.class.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">UsMetro.delivery.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/">UsMetro.res.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/data/">res-continent.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/data/">res-iso3166-1.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/data/">res-iso3166-2-S1.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/data/">res-iso3166-2-S2.inc.php</file>
+            <file path="{MODULEPATH}deliveryLimitations/Geo/data/">res-us-metro.inc.php</file>
+        </files>
+
+
+        <components>
+            <component><name>Areacode</name></component>
+            <component><name>City</name></component>
+            <component><name>Continent</name></component>
+            <component><name>Country</name></component>
+            <component><name>Dma</name></component>
+            <component><name>Latlong</name></component>
+            <component><name>Netspeed</name></component>
+            <component><name>Organisation</name></component>
+            <component><name>Postalcode</name></component>
+            <component><name>Subdivision1</name></component>
+            <component><name>Subdivision2</name></component>
+        </components>
+
+    </install>
+
+</plugin>
