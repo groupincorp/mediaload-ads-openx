@@ -18,7 +18,7 @@
             <td style="padding-bottom:5px; white-space: nowrap;">
                 <br />
                 <a href="<?php echo htmlspecialchars($t->pageURI);?>plugin=advertiser:statshistory" accesskey="e">
-                    <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> 9<?php echo $t->strExportStatisticsToExcel;?>
+                    <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?>
                 </a>
             </td>
             <td width="90%">&nbsp;</td>
@@ -26,7 +26,7 @@
             <td style="padding-bottom:5px; white-space: nowrap;">
                 <br />
                 <span style="color: #999999;">
-                    <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> 0<?php echo $t->strExportStatisticsToExcel;?></span>
+                    <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?></span>
             </td>
             <td width="90%">&nbsp;</td>
             <?php }?>

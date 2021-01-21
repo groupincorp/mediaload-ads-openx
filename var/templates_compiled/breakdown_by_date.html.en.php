@@ -18,15 +18,17 @@
     		<td style="padding-bottom:5px; white-space: nowrap;">
     			<br />
     			<a href="<?php echo htmlspecialchars($t->pageURI);?>plugin=advertiser:statshistory" accesskey="e">
-                <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> 7<?php echo $t->strExportStatisticsToExcel;?>
+                    <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?>
                 </a>
+
+                <a target="_blank" href="http://ads-report.ml.groupincorp.com/campaign/<?php echo($_GET['campaignid']); ?>">Report Dashboard</a>
     		</td>
     		<td width="90%">&nbsp;</td>
     	<?php } else {?>
     		<td style="padding-bottom:5px; white-space: nowrap;">
     			<br />
     			<span style="color: #999999;">
-                <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> 8<?php echo $t->strExportStatisticsToExcel;?></span>
+                <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?></span>
     		</td>
     		<td width="90%">&nbsp;</td>
     	<?php }?>
