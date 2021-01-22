@@ -26,7 +26,7 @@
                     <img src="<?php echo htmlspecialchars($t->assetPath);?>/images/excel.gif" border="0" alt="" /> <?php echo $t->strExportStatisticsToExcel;?>
                 </a>
                 |
-                <a target="_blank" href="http://ads-report.ml.groupincorp.com/campaign/<?php echo($_GET['campaignid']); ?>?start=<?php echo $startDate; ?>&end=<?php echo $endDate; ?>">Report Dashboard</a>
+                <a target="_blank" href="https://ads-report.khmerload.com/campaign/<?php echo($_GET['campaignid']); ?>?start=<?php echo $startDate; ?>&end=<?php echo $endDate; ?>">Report Dashboard</a>
     		</td>
     		<td width="90%">&nbsp;</td>
     	<?php } else {?>
